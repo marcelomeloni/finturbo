@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import Graficos from './pages/Graficos';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import MetasPage from './pages/MetasPage';
 import ProfilePage from './pages/ProfilePage';
 import TransactionsPage from './pages/TransactionsPage';
 // Componente de Rota Protegida
@@ -36,6 +37,7 @@ function App() {
           <Route path="graficos" element={<Graficos />} /> {/* Rota "/graficos" */}
           <Route path="perfil" element={<ProfilePage />} />
           <Route path="lancamentos" element={<TransactionsPage />} /> {/* <-- ADICIONE ESTA ROTA */}
+          <Route path="metas" element={<MetasPage />} />
           {/* Adicione outras páginas protegidas aqui */}
         </Route>
       </Routes>
